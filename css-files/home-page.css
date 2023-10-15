@@ -1,7 +1,4 @@
-body {
-  padding: 200px;
-}
-.dapage{
+.dapage {
   display: flex;
   flex-direction: column;
   align-items: center;
