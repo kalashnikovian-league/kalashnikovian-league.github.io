@@ -1,0 +1,56 @@
+.sections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: margin-top 0.15s;
+}
+.section {
+  background-color: rgb(34, 34, 34);
+  width: 210px;
+  height: 375px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 300px;
+  transition: background-color 0.15s;
+}
+.section:hover {
+  background-color: rgb(44, 44, 44);
+}
+.logos {
+  position: relative;
+}
+.logo {
+  width: 150px;
+}
+.corner-logo {
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.title {
+  width: 200px;
+  margin-bottom: 2px;
+  margin-top: 8px;
+}
+.short-info {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  background-color: rgb(70, 70, 70);
+  padding: 7px 15px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(102, 102, 102);
+}

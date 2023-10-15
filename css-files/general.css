@@ -1,0 +1,16 @@
+* {
+  font-family: Lato, Arial;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: rgb(16, 16, 16);
+}
+.info-links {
+  text-decoration: underline;
+}
+.info-links:hover {
+  font-weight: bold;
+}

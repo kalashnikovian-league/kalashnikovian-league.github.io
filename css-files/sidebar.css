@@ -1,0 +1,64 @@
+.sidebar {
+  background-color: rgb(8, 8, 8);;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 60px;
+  transition: width 0.15s;
+  z-index: 2;
+}
+.sidebar:hover {
+  width: 175px;
+}
+/*.hamburger-menu {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.hamburger-menu:active .sidebar {
+  width: 175px;
+}*/
+.sidebar-icon-div {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.sidebar-icon {
+  width: 50px;
+  position: absolute;
+  left: 5px;
+}
+.sidebar-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+.sidebar-section:hover {
+  background-color: rgb(110, 110, 110);
+}
+.sidebar-section:active {
+  background-color: rgb(170, 170, 170);
+}
+.sidebar-sections-text {
+  opacity: 0;
+  width: 115px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.sidebar-sections-texts {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 3px;
+  cursor: pointer;
+  width: 115px;
+}
+.sidebar:hover .sidebar-sections-text {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
