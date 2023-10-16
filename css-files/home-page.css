@@ -1,8 +1,23 @@
+.background-vid {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(12px);
+}
 .dapage {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 70px;
 }
 .kl-logo {
   width: 200px;
