@@ -1,9 +1,17 @@
 .sections {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   transition: margin-top 0.15s;
 }
+/* FIXME: make a grid instead of the flexbox + make the sections move if the resolution is changed to something*/
+/* .sections-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+} */
 .section {
   background-color: rgb(34, 34, 34);
   width: 210px;
@@ -15,8 +23,7 @@
   text-align: center;
   flex-direction: column;
   border-radius: 10px;
-  transition: background-color 0.15s;
-  transition: height 0.15s;
+  transition: height 0.15s, background-color 0.15s;
   cursor: default;
 }
 .section:hover {

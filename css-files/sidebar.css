@@ -1,5 +1,9 @@
+main {
+  transition: filter 0.15s;
+  /* overflow: hidden; */
+}
 .sidebar {
-  background-color: rgb(8, 8, 8);;
+  background-color: rgb(8, 8, 8);
   position: fixed;
   left: 0;
   bottom: 0;
@@ -11,6 +15,10 @@
 .sidebar:hover {
   width: 175px;
 }
+/* FIXME: the blur after hovering on the sidebar, currently broken cuz of the vid on the homepage */
+/* .sidebar:hover + main {
+  filter: blur(5px);
+} */
 /*.hamburger-menu {
   width: 60px;
   height: 60px;
@@ -37,6 +45,7 @@
   align-items: center;
   cursor: pointer;
   transition: background-color 0.1s;
+  /* border-radius: 10px; */
 }
 .sidebar-section:hover {
   background-color: rgb(110, 110, 110);
@@ -46,7 +55,7 @@
 }
 .sidebar-sections-text {
   opacity: 0;
-  width: 115px;
+  width: 110px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -61,4 +70,7 @@
 .sidebar:hover .sidebar-sections-text {
   opacity: 1;
   transition: opacity 0.5s;
+}
+.active {
+  background-color: rgb(50, 50, 50);
 }
