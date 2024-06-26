@@ -23,9 +23,15 @@
   padding: 50px;
   border-radius: 70px;
 }
-.kl-logo {
+#kl-logo {
   width: 200px;
+  animation-name: rotate;
+  /* animation-duration: 2s; */
 }
+/* @keyframes rotate {
+  100%{transform: rotateZ(360deg);}
+} */
+/* TODO: moze animacja */
 .title {
   color: white;
   margin-bottom: 0;
