@@ -19,15 +19,6 @@ main {
 /* .sidebar:hover + main {
   filter: blur(5px);
 } */
-/*.hamburger-menu {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-.hamburger-menu:active .sidebar {
-  width: 175px;
-}*/
 .sidebar-icon-div {
   width: 60px;
   height: 60px;

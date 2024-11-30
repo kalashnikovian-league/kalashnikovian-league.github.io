@@ -1,0 +1,54 @@
+main, .generatedLoadout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.generatedLoadout > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.generatedLoadout > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+button {
+  background-color: rgb(70, 70, 70);
+  padding: 7px 15px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(102, 102, 102);
+}
+button:active {
+  background-color: rgb(131, 131, 131);
+}
+.include {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+input[type="checkbox"]:checked {
+  accent-color: green;
+}
+/* #includeAuction {
+  accent-color: purple;
+}
+#includeEvent {
+  accent-color: red;
+}
+#includeGamepass {
+  accent-color: gold;
+} */

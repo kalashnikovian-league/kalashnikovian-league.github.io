@@ -1,5 +1,6 @@
 /* FIXME: the sidebar blur moves the video to some random position for some reason */
-.background-vid {
+/* .background-vid { */
+.background-img {
   width: 100%;
   height: 100%;
   /* * this thing has something to do with the blur */
@@ -26,12 +27,11 @@
 #kl-logo {
   width: 200px;
   animation-name: rotate;
-  /* animation-duration: 2s; */
+  animation-duration: 2s;
 }
-/* @keyframes rotate {
+@keyframes rotate {
   100%{transform: rotateZ(360deg);}
-} */
-/* TODO: moze animacja */
+}
 .title {
   color: white;
   margin-bottom: 0;

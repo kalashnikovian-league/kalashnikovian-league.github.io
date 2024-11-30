@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- site made by max out of pure boredom, made out of only html and css cuz max is too lazy and stupid to learn javascript lmao (not anymore i learned js real sigma)-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalashnikovian League</title>
     <link rel="icon" type="image/png" href="kl-logos/kl-logo.png">
     <link rel="stylesheet" href="css-files/general.css">
     <link rel="stylesheet" href="css-files/sidebar.css">
-    <link rel="stylesheet" href="css-files/home-page.css">
+    <link rel="stylesheet" href="css-files/loadout-generator.css">
     
     <!-- !fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +27,7 @@
     <div class="sidebar">
       
       <a href="index.html">
-        <div class="sidebar-section active">
+        <div class="sidebar-section">
           <div class="sidebar-icon-div">
             <img src="icons/home.png" class="sidebar-icon">
           </div>
@@ -61,7 +60,7 @@
       </a>
       
       <a href="loadout-generator.html">
-        <div class="sidebar-section">
+        <div class="sidebar-section active">
           <div class="sidebar-icon-div">
             <img src="icons/loadout-generator.png" class="sidebar-icon">
           </div>
@@ -85,15 +84,65 @@
     </div>
     <!-- !sidebar end -->
     <main>
-      <!-- <video class="background-vid" autoplay muted loop src="media/The Wild West 3.1 Factions Update Trailer.mp4"></video> -->
-      <img src="media/klfamilyphotoedited.png" alt="KL family photo" class="background-img">
-      <div class="dapage">
-        <img src="kl-logos/kl-logo.png" id="kl-logo">
-        <h1 class="title">THE KALASHNIKOVIAN LEAGUE</h1>
-        <h2 class="motto">REVENGE AT ALL COSTS!</h2>
-        <p class="info">Welcome to the official page of the Kalashnikovian League! We are a <a href="https://www.roblox.com/games/2317712696/The-Wild-West" target="_blank" class="info-links">Roblox The Wild West</a> faction and a <a href="other-links.html" class="info-links">Discord Server</a> on which we play games talk about everyday stuff etc.</p>
-      </div>
-      <!-- TODO: planned announcements panel -->
+      <h1 style="margin-bottom: 0;">LOADOUT GENERATOR</h1>
+      <!-- <h6 style="margin: 0;">small side project by max, pretty fun practice i guess</h6> -->
+        <div class="generatedLoadout">
+          <div>
+            <div>
+              <h3>Main firearm</h3>
+              <img src="loadout-generator/empty-slot.png" alt="" id="rifleImg">
+              <h4 id="rifleName">Empty</h4>
+            </div>
+            <div>
+              <h3>1st sidearm</h3>
+              <img src="loadout-generator/empty-slot.png" alt="" id="side1Img">
+              <h4 id="side1Name">Empty</h4>
+            </div>
+            <div>
+              <h3>2nd sidearm</h3>
+              <img src="loadout-generator/empty-slot.png" alt="" id="side2Img">
+              <h4 id="side2Name">Empty</h4>
+            </div>
+          </div>
+            
+          <div>
+            <div>
+              <h3>Melee</h3>
+              <img src="loadout-generator/empty-slot.png" alt="" id="meleeImg">
+              <h4 id="meleeName">Empty</h4>
+            </div>
+            <div>
+              <h3>Other Weapon</h3>
+              <img src="loadout-generator/empty-slot.png" alt="" id="otherWeaponImg">
+              <h4 id="otherWeaponName">Empty</h4>
+            </div>
+            <!-- add 2nd other weapon maybe -->
+          </div>
+
+        </div>
+        <div class="include">
+          <!-- <div>
+            <label for="includeGeneral">include general items</label>
+            <input type="checkbox" id="includeGeneral" checked="checked">
+          </div> -->
+          <div>
+            <label for="includeAuction">include auction items</label>
+            <input id="includeAuction" type="checkbox" checked="checked">
+          </div>
+
+          <div>
+            <label for="includeEvent">include event items</label>
+            <input id="includeEvent" type="checkbox" checked="checked">
+          </div>
+          
+          <div>
+            <label for="includeGamepass">include gamepass items</label>
+            <input id="includeGamepass" type="checkbox" checked="checked">
+          </div>
+        </div>
+
+        <button onclick="generateLoadout()" class="">Generate loadout</button>
+      <script src="js-files/loadout-generator.js"></script>
     </main>
   </body>
 </html>

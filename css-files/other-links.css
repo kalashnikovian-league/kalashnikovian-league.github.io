@@ -1,5 +1,6 @@
 .sections {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   transition: margin-top 0.15s;
@@ -10,13 +11,12 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  place-items: center;
 } */
 .section {
   background-color: rgb(34, 34, 34);
   width: 210px;
   height: 375px;
-  margin: 0 10px;
+  margin: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +25,23 @@
   border-radius: 10px;
   transition: height 0.15s, background-color 0.15s;
   cursor: default;
+}
+@media screen and (max-width: 580px) {
+  .sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width:580px) and (max-width: 800px) {
+  .sections {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .sections {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .section:hover {
   background-color: rgb(44, 44, 44);
@@ -62,4 +79,7 @@ button {
 }
 button:hover {
   background-color: rgb(102, 102, 102);
+}
+button:active {
+  background-color: rgb(131, 131, 131);
 }
